@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>548</width>
+    <height>243</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lb_logoEmpresa">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>140</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/logoEmpresa/icons/logo_empresa.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cliente">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_cliente/icons/cliente.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_produtos">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_produtos/icons/produtos.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_fornecedor">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));
+image: url(:/icon_fornecedor/icons/fornecedor.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_vendas">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));
+image: url(:/icon_vendas/icons/venda.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_pagar">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_pagar/icons/contasPagar.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_bancos">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_bancos/icons/banco.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_receber">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_receber/icons/receber.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_caixa">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_caixa/icons/caixa.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sair">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icon_sair/icons/sair.png);
+background-color: qradialgradient(spread:pad,cx:0.5,cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop: 0 rgba(255,255,255,0));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>548</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <addaction name="actionCliente"/>
+    <addaction name="separator"/>
+    <addaction name="actionFornecedor"/>
+    <addaction name="separator"/>
+    <addaction name="actionUsuarios"/>
+   </widget>
+   <widget class="QMenu" name="menuOpera_es">
+    <property name="title">
+     <string>Operações</string>
+    </property>
+    <widget class="QMenu" name="menuSaida_de_produtos">
+     <property name="title">
+      <string>Saida de produtos</string>
+     </property>
+     <addaction name="actionVenda"/>
+     <addaction name="separator"/>
+     <addaction name="actionConsumo_de_produtos"/>
+    </widget>
+    <widget class="QMenu" name="menuEstoque">
+     <property name="title">
+      <string>Estoque</string>
+     </property>
+     <addaction name="actionSaldo"/>
+    </widget>
+    <widget class="QMenu" name="menuCompras">
+     <property name="title">
+      <string>Compras</string>
+     </property>
+     <addaction name="actionCompras_2"/>
+     <addaction name="separator"/>
+     <addaction name="actionPedidos"/>
+     <addaction name="separator"/>
+     <addaction name="actionCancelar"/>
+    </widget>
+    <addaction name="menuEstoque"/>
+    <addaction name="separator"/>
+    <addaction name="menuCompras"/>
+    <addaction name="separator"/>
+    <addaction name="menuSaida_de_produtos"/>
+   </widget>
+   <widget class="QMenu" name="menuFinanceiro">
+    <property name="title">
+     <string>Financeiro</string>
+    </property>
+    <addaction name="actionCaixa"/>
+    <addaction name="separator"/>
+    <addaction name="actionContas_bancos"/>
+    <addaction name="separator"/>
+    <addaction name="actionContas_a_pagar"/>
+    <addaction name="separator"/>
+    <addaction name="actionContas_pagas"/>
+    <addaction name="separator"/>
+    <addaction name="actionContas_a_receber"/>
+    <addaction name="separator"/>
+    <addaction name="actionContas_recebidas"/>
+   </widget>
+   <widget class="QMenu" name="menuConsultas">
+    <property name="title">
+     <string>Consultas</string>
+    </property>
+    <widget class="QMenu" name="menuVendas">
+     <property name="title">
+      <string>Vendas</string>
+     </property>
+     <addaction name="actionGeral"/>
+     <addaction name="separator"/>
+     <addaction name="actionResumido"/>
+    </widget>
+    <widget class="QMenu" name="menuConsumo">
+     <property name="title">
+      <string>Consumo</string>
+     </property>
+     <addaction name="actionGeral_2"/>
+     <addaction name="separator"/>
+     <addaction name="actionResumido_2"/>
+    </widget>
+    <addaction name="menuVendas"/>
+    <addaction name="separator"/>
+    <addaction name="menuConsumo"/>
+   </widget>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuOpera_es"/>
+   <addaction name="menuFinanceiro"/>
+   <addaction name="menuConsultas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCliente">
+   <property name="text">
+    <string>Cliente</string>
+   </property>
+  </action>
+  <action name="actionFornecedor">
+   <property name="text">
+    <string>Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionUsuarios">
+   <property name="text">
+    <string>Usuarios</string>
+   </property>
+  </action>
+  <action name="actionVenda">
+   <property name="text">
+    <string>Venda</string>
+   </property>
+  </action>
+  <action name="actionConsumo_de_produtos">
+   <property name="text">
+    <string>Consumo de produtos</string>
+   </property>
+  </action>
+  <action name="actionSaldo">
+   <property name="text">
+    <string>Saldo</string>
+   </property>
+  </action>
+  <action name="actionCompras_2">
+   <property name="text">
+    <string>Compras</string>
+   </property>
+  </action>
+  <action name="actionPedidos">
+   <property name="text">
+    <string>Pedir</string>
+   </property>
+  </action>
+  <action name="actionCancelar">
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </action>
+  <action name="actionCaixa">
+   <property name="text">
+    <string>Caixa</string>
+   </property>
+  </action>
+  <action name="actionContas_bancos">
+   <property name="text">
+    <string>Contas bancos</string>
+   </property>
+  </action>
+  <action name="actionContas_a_pagar">
+   <property name="text">
+    <string>Contas a pagar</string>
+   </property>
+  </action>
+  <action name="actionContas_pagas">
+   <property name="text">
+    <string>Contas pagas</string>
+   </property>
+  </action>
+  <action name="actionContas_a_receber">
+   <property name="text">
+    <string>Contas a receber</string>
+   </property>
+  </action>
+  <action name="actionContas_recebidas">
+   <property name="text">
+    <string>Contas recebidas</string>
+   </property>
+  </action>
+  <action name="actionGeral">
+   <property name="text">
+    <string>Geral</string>
+   </property>
+  </action>
+  <action name="actionResumido">
+   <property name="text">
+    <string>Resumido</string>
+   </property>
+  </action>
+  <action name="actionGeral_2">
+   <property name="text">
+    <string>Geral</string>
+   </property>
+  </action>
+  <action name="actionResumido_2">
+   <property name="text">
+    <string>Resumido</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="logo_empresa.qrc"/>
+  <include location="icon_sair.qrc"/>
+  <include location="icon_caixa.qrc"/>
+  <include location="icon_receber.qrc"/>
+  <include location="icon_bancos.qrc"/>
+  <include location="icon_pagar.qrc"/>
+  <include location="icon_vendas.qrc"/>
+  <include location="icon_produtos.qrc"/>
+  <include location="icon_fornecedor.qrc"/>
+  <include location="icon_cliente.qrc"/>
+ </resources>
+ <connections/>
+</ui>

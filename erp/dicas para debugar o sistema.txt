@@ -1,0 +1,37 @@
+Pesquisa tabela, depois o usuário seleciona algum cliente e aperta o botão consultar.
+
+
+
+Blz, funcionando vem agora a segunda etapa e a mais trabalhosa que é imaginar e contornar/bloquear toda e qualquer interação errada que o usuário possa fazer no sistema.
+
+
+
+No caso da tabela sim ela crasha porque o código espera um código de cliente que não existe. Para contornar seria interessante colocar um IF fazendo a checagem se a variável código contém um código de fato e, se não, mostrar um aviso falando "AVISO: Selecione um cliente antes de prosseguir.".
+
+
+
+Da mesma forma temos um outro problema na parte de cadastro onde um usuário pode tentar cadastrar um cliente sem ter escrito nada nas variáveis, ou seja, deixou em branco o nome, cidade e telefone. Para contornar você precisa bloquear esta situação fazendo uma checagem de acordo com sua regra de negócio.
+
+Por exemplo, se no seu banco de dados você aceita Telefone como VAZIO então você não precisa checar se a variável telefone do sistema tem alguma coisa contida, já nome é essencial então é necessário checar se tem alguma coisa e, caso não, mostrar um aviso na tela ou mudar a cor da caixa de texto para vermelho sinalizando que faltou algo (e não concluindo a QUERY de cadastro).
+
+
+
+Se você espera que o usuário coloco números mas ele coloca a cidade, qual a ação que o seu sistema fará para não deixar que isto passe e dar erro no banco de dados a ponto de crashar? Pode limitar somente a caracteres numéricos na hora da escrita, pode verificar o tipo de variável de retorno e mostrar um aviso ou então simplesmente checar o que tem nas variáveis e apagar o que há de errado.
+
+
+
+Então temos:
+
+
+
+1º Passo: Criar as regras de negócio no banco de dados;
+
+2º Passo: Elaborar o código de acordo com sua lógica (sequência de interações com o programa)
+
+3º Passo: Funcionando o passo anterior, pensar em quais interações os usuários podem fazer e as bloquear com condições IF.
+
+
+
+OBS: Sim, usuários erram e bastante. Você pensa tudo com cuidado e de modo simples e vai o cara do escritório e te fala "viu, eu apertei deletar e depois sim, mas não era pra deletar sabe. Tem como você recuperar pra mim?"
+
+É por isto que não uso o "delete" em cadastros, eu tenho sempre uma variável binário S ou N (Ativo, S ou N) que se o usuário cadastra eu deixo "S", se ele deletar eu altero pra "N". Se ele fizer qualquer burrada eu só entro no BD e altero esta variável que volta pra sistema, caso contrário eu iria ter que procurar em um backup o que da mais trabalho.
